@@ -257,6 +257,30 @@ h3 {
   font-weight: 400;
 }
 
+.footer {
+  background-color: rgb(28, 6, 123);
+  padding: 2em 0;
+  text-align: center;
+  width: 100%;
+}
+.footer img {
+  width: 80px;
+}
+
+.icons .fa {
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+  margin: 0 0.5em;
+  padding: 1em 0;
+}
+.fa-heart-o {
+  color: #f1f436;
+}
+.footer p {
+  text-align: center;
+}
+
 @media screen and (max-width: 700px) {
   .main-header h1 {
     font-size: 2.5em;
