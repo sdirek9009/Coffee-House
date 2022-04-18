@@ -1,0 +1,247 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-image: linear-gradient(
+      rgba(32, 50, 70, 0.7),
+      rgba(32, 50, 70, 0.7)
+    ),
+    url("images/coffee3.jpeg");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  padding: 1em 1.2em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 1em 1em;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.nav-links ul li::after {
+  background: #f44336;
+  content: "";
+  display: block;
+  height: 0.2em;
+  margin: auto;
+  transition: 0.5s;
+  width: 0%;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.main-header {
+  color: #fff;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.main-header h1 {
+  font-size: 5em;
+  text-transform: uppercase;
+}
+
+.main-header p {
+  color: #fffeee;
+  font-size: 2em;
+  margin: 1em 0 4em;
+}
+
+.btn {
+  border: #fff solid 1px;
+  color: #fff;
+  display: inline-block;
+  padding: 1em;
+  text-decoration: none;
+}
+.btn:hover {
+  border: #f44336 solid 1px;
+  background: #f44336;
+  transition: 1s;
+}
+
+nav .fa {
+  display: none;
+}
+
+.general {
+  margin: auto;
+  padding-top: 5em;
+  text-align: center;
+  width: 80%;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 600;
+}
+p {
+  color: #999;
+  font-size: 1.6em;
+  font-weight: 300;
+  line-height: 1.5em;
+  padding: 1em;
+  text-align: justify;
+}
+
+.about-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.about-col {
+  background: #f3f0df;
+  border-radius: 10px;
+  box-sizing: border-box;
+  flex-basis: 31%;
+  font-size: 1em;
+  margin-bottom: 1em;
+  padding: 1em 1em;
+  transition: 1s;
+}
+
+h3 {
+  font-size: 1.7em;
+  font-weight: 450;
+}
+
+.about-col p {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  padding: 1em;
+}
+
+.about-col:hover {
+  box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2);
+}
+.product-row {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-col {
+  border-radius: 10px;
+  margin-bottom: 2em;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-col img {
+  border-radius: 10px;
+  height: 20vw;
+  width: 100%;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background: rgba(90, 106, 126, 0.7);
+}
+
+.layer h3 {
+  bottom: 0;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 500;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  width: 100%;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+.meeting {
+  margin: 6em auto;
+  width: 80%;
+  background-image: linear-gradient(
+      rgba(121, 181, 238, 0.7),
+      rgba(121, 181, 238, 0.7)
+    ),
+    url(images/meeting.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 6em 0;
+}
+.meeting h1 {
+  color: #000;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.meeting p {
+  color: #333;
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee House</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="main-header">
+        <h1>Coffee House</h1>
+        <p>We don't make your coffee. We make your day.</p>
+        <a href="" class="btn">Visit Us To Know More</a>
+      </div>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-300px";
+      }
+    </script>
+
+<section class="general">
+    <h1>About Us</h1>
+    <p>
+      As a family business, personal contact has always been an important
+      driver of our work, be it in exchange with you or with each other.
+      That's why we're proud of our competent team. Today you can find our
+      Shop in Claraplatz Basel. In the "Tradition" section you can find out
+      everything about the individual stages of our more than 45-year company
+      history.
+    </p>
+    <div class="about-row">
+      <div class="about-col">
+        <h3>Team</h3>
+        <p>
+          At Coffee House, we are united by passion for good food and
+          services. And for the satisfaction of our customers. Get to know us!
+        </p>
+      </div>
+      <div class="about-col">
+        <h3>Tradition</h3>
+        <p>
+          Our Company has a history that fills up with pride. We would be
+          happy to inform you in details about ourselfs.
+        </p>
+      </div>
+      <div class="about-col">
+        <h3>Bakery</h3>
+        <p>
+          We would like to show you around our bakery personally. You will
+          have a chance to taste fresh product and have conversations with our
+          staff.
+        </p>
+      </div>
+    </div>
+</section>
+</section>
+<section class="general">
+  <h1>Our Products</h1>
+  <p>The fact that we have been able to establish ourselves as a bakery for the people over the course of our 45-year company history is certainly thanks to our ingenious recipes. But also the fact that we take our time when preparing our delicacies. This includes, for example, that we largely do without machines in our bakery . <strong>"Made by hand"</strong> is not just a promise, but a living reality. In addition, the connection with the region also helps us in sourcing the best ingredients. Because we are rooted here, we know you all, the producers from whom we obtain raw materials of premium quality. Come by and see for yourself that it always tastes a little better here than anywhere else.</p>
+  <div class="product-row">
+    <div class="product-col box1">
+      <img src="images/coffee_1.jpeg" alt="Coffee" />
+      <div class="layer">
+        <h3>Best Coffee</h3>
+      </div>
+    </div>
+    <div class="product-col box2">
+      <img src="images/cake.jpeg" alt="Cake" />
+      <div class="layer">
+        <h3>Daily Fresh Cakes</h3>
+      </div>
+    </div>
+    <div class="product-col box3">
+      <img src="images/crossant1.jpeg" alt="Crossant" />
+      <div class="layer">
+        <h3>Delicious Crossant</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="meeting">
+    <h1>
+      Comfortable Meeting and <br> Study Rooms</h1>
+      <p>Make meetings more meaningful</p>
+    <a href="" class="btn">CONTACT US</a>
+  </section>
+
+
+
+
+
+
+  </body>
+</html>
