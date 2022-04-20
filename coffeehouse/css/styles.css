@@ -26,7 +26,7 @@ body {
       rgba(32, 50, 70, 0.7),
       rgba(32, 50, 70, 0.7)
     ),
-    url("images/coffee3.jpeg");
+    url("../images/coffee3.jpeg");
   background-position: center;
   background-size: cover;
   min-height: 100vh;
@@ -229,7 +229,7 @@ h3 {
       rgba(121, 181, 238, 0.7),
       rgba(121, 181, 238, 0.7)
     ),
-    url(images/meeting.jpeg);
+    url(../images/meeting.jpeg);
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -258,7 +258,7 @@ h3 {
 }
 
 .footer {
-  background-color: rgb(28, 6, 123);
+  background-color: rgb(4, 1, 40);
   padding: 2em 0;
   text-align: center;
   width: 100%;
@@ -279,6 +279,85 @@ h3 {
 }
 .footer p {
   text-align: center;
+}
+
+/* Feedback page*/
+
+.blog-header {
+  background-image: linear-gradient(
+      rgba(32, 50, 70, 0.7),
+      rgba(32, 50, 70, 0.7)
+    ),
+    url("../images/feedback.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 40vh;
+  position: relative;
+  width: 100%;
+}
+
+.feedback-header h1 {
+  color: #fff;
+  font-size: 4em;
+  margin: 0;
+  text-align: center;
+}
+
+.feedback-header p {
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+}
+
+.blog {
+  margin: auto;
+  padding-top: 5em;
+  text-align: center;
+  width: 80%;
+}
+
+.blog p {
+  font-size: 1.6em;
+}
+
+.blog-row {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
+.blog-col {
+  background: #fff3f3;
+  border-radius: 1em;
+  cursor: pointer;
+  margin-bottom: 2em;
+  padding: 2em;
+  text-align: left;
+}
+
+.blog-col img {
+  border-radius: 50%;
+  height: 4em;
+  width: 4em;
+}
+
+.blog-col h3 {
+  font-size: 1.3em;
+  margin-top: 1.2em;
+  text-align: left;
+}
+
+.blog-col p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding: 0;
+}
+
+.blog-col .fa {
+  color: #f44336;
 }
 
 @media screen and (max-width: 700px) {
@@ -359,6 +438,9 @@ h3 {
   .meeting a {
     font-size: 1.3em;
     font-weight: 400;
+  }
+  .blog-row {
+    grid-template-columns: 1fr;
   }
 
 }
