@@ -12,7 +12,7 @@ html {
 }
 
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.1em;
   list-style: none;
 }
@@ -95,7 +95,6 @@ nav img {
 .main-header p {
   color: #fffeee;
   font-size: 2em;
-  /*margin: 1em 0;*/
   text-align: center;
 }
 
@@ -147,7 +146,7 @@ p {
 }
 
 .about-col {
-  background: #f3f0df;
+  background: #eaebd5;
   border-radius: 10px;
   box-sizing: border-box;
   flex-basis: 31%;
@@ -159,7 +158,7 @@ p {
 
 h3 {
   font-size: 1.7em;
-  font-weight: 450;
+  font-weight: bold;
   margin-top: 0.5em;
   padding: 0;
 }
@@ -296,7 +295,12 @@ h3 {
   position: relative;
   width: 100%;
 }
-
+.product-header h1 {
+  color: #fff;
+  font-size: 4em;
+  text-align: center;
+  margin: 0 auto;
+}
 .container {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -419,6 +423,14 @@ h3 {
   padding: 0;
   width: 80%;
 }
+
+.services-header h1 {
+  color: #fff;
+  font-size: 4em;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .main-container h2 {
   color: #000;
   font-size: 2em;
@@ -534,7 +546,7 @@ h3 {
       rgba(32, 50, 70, 0.7),
       rgba(32, 50, 70, 0.7)
     ),
-    url("../images/contact2.jpeg");
+    url("../images/contact.jpeg");
   background-position: center;
   background-size: cover;
   min-height: 50vh;
@@ -628,7 +640,7 @@ button {
 }
 
 .top-address-col {
-  background: rgb(9, 2, 40);
+  background: rgb(3, 28, 98);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
@@ -643,11 +655,13 @@ button {
   color: #fff;
   font-size: 2em;
   margin: 0 auto;
+  margin-top: 2em;
   text-align: center;
 }
 .top-address-col p {
   color: #eee;
   font-size: 1em;
+  margin-bottom: 1em;
   text-align: center;
 }
 
